@@ -1,0 +1,12 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: 'Google'
+  link: 'http://www.google.com'
+  user: patrick
+
+two:
+  name: 'Facebook'
+  link: 'http://www.facebook.com'
+  user: patrick
+

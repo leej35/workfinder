@@ -1,0 +1,153 @@
+  [4;36;1mStory Create (0.3ms)[0m   [0;1mINSERT INTO "stories" ("link", "updated_at", "name", "created_at") VALUES('http://www.juyekim.com', '2013-04-23 10:43:49', 'Juye''s homepage', '2013-04-23 10:43:49')[0m
+  [4;36;1mStory Create (0.2ms)[0m   [0;1mINSERT INTO "stories" ("link", "created_at", "name", "updated_at") VALUES('http://www.juyekim.com', '2013-04-23 10:45:19', 'Juye''s homepage', '2013-04-23 10:45:19')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stories" [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2013-04-23 12:51:10) [POST]
+  Parameters: {"story"=>{}}
+Rendering template within layouts/stories
+Rendering stories/new
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://test.host/stories?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#destroy (for 0.0.0.0 at 2013-04-23 12:51:10) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;35;1mStory Destroy (0.1ms)[0m   [0mDELETE FROM "stories" WHERE "id" = 980190962[0m
+Redirected to http://test.host/stories
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/stories/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#edit (for 0.0.0.0 at 2013-04-23 12:51:10) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/stories
+Rendering stories/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/stories/980190962/edit]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2013-04-23 12:51:10) [GET]
+  [4;35;1mStory Load (0.2ms)[0m   [0mSELECT * FROM "stories" [0m
+Rendering template within layouts/stories
+Rendering stories/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2013-04-23 12:51:10) [GET]
+Rendering template within layouts/stories
+Rendering stories/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2013-04-23 12:51:10) [GET]
+  [4;36;1mStory Load (0.2ms)[0m   [0;1mSELECT * FROM "stories" [0m
+Rendering template within layouts/stories
+Rendering stories/index
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/stories]
+  [4;35;1mStory Load (0.2ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2013-04-23 12:51:10) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/stories
+Rendering stories/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/stories/980190962]
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#update (for 0.0.0.0 at 2013-04-23 12:51:10) [PUT]
+  Parameters: {"story"=>{}, "id"=>"980190962"}
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Redirected to http://test.host/stories/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/stories/980190962?]
+  [4;36;1mStory Create (0.2ms)[0m   [0;1mINSERT INTO "stories" ("link", "created_at", "name", "updated_at") VALUES('http://www.juyekim.com', '2013-04-23 10:57:51', 'Juye''s homepage', '2013-04-23 10:57:51')[0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2013-04-23 12:57:52) [POST]
+  Parameters: {"story"=>{"link"=>"http://www.test.com", "name"=>"test story"}}
+  [4;36;1mStory Create (0.3ms)[0m   [0;1mINSERT INTO "stories" ("link", "created_at", "updated_at", "name") VALUES('http://www.test.com', '2013-04-23 10:57:52', '2013-04-23 10:57:52', 'test story')[0m
+Redirected to http://test.host/stories/980190963
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/stories?story%5Blink%5D=http%3A%2F%2Fwww.test.com&story%5Bname%5D=test+story]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2013-04-23 12:57:52) [POST]
+  Parameters: {"story"=>{}}
+Rendering template within layouts/stories
+Rendering stories/new
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/stories?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#destroy (for 0.0.0.0 at 2013-04-23 12:57:52) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mStory Destroy (0.1ms)[0m   [0;1mDELETE FROM "stories" WHERE "id" = 980190962[0m
+Redirected to http://test.host/stories
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/stories/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "stories" [0m
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#edit (for 0.0.0.0 at 2013-04-23 12:57:52) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/stories
+Rendering stories/edit
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/stories/980190962/edit]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2013-04-23 12:57:52) [GET]
+  [4;36;1mStory Load (0.2ms)[0m   [0;1mSELECT * FROM "stories" [0m
+Rendering template within layouts/stories
+Rendering stories/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/stories]
+
+
+Processing StoriesController#new (for 0.0.0.0 at 2013-04-23 12:57:52) [GET]
+Rendering template within layouts/stories
+Rendering stories/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/stories/new]
+
+
+Processing StoriesController#create (for 0.0.0.0 at 2013-04-23 12:57:52) [POST]
+  Parameters: {"story"=>{"name"=>"story without a link"}}
+Rendering template within layouts/stories
+Rendering stories/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/stories?story%5Bname%5D=story+without+a+link]
+
+
+Processing StoriesController#index (for 0.0.0.0 at 2013-04-23 12:57:52) [GET]
+  [4;35;1mStory Load (0.2ms)[0m   [0mSELECT * FROM "stories" [0m
+Rendering template within layouts/stories
+Rendering stories/index
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/stories]
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#show (for 0.0.0.0 at 2013-04-23 12:57:52) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Rendering template within layouts/stories
+Rendering stories/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/stories/980190962]
+  [4;36;1mStory Load (0.1ms)[0m   [0;1mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+
+
+Processing StoriesController#update (for 0.0.0.0 at 2013-04-23 12:57:52) [PUT]
+  Parameters: {"id"=>"980190962", "story"=>{}}
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+Redirected to http://test.host/stories/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/stories/980190962?]
+  [4;36;1mStory Create (0.2ms)[0m   [0;1mINSERT INTO "stories" ("link", "user_id", "name", "created_at", "updated_at") VALUES('http://www.juyekim.com', NULL, 'Juye''s homepage', '2013-04-24 10:55:32', '2013-04-24 10:55:32')[0m
+  [4;35;1mStory Load (0.2ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 980190962) [0m
+  [4;36;1mVote Load (0.1ms)[0m   [0;1mSELECT * FROM "votes" WHERE ("votes"."id" = 980190962) [0m
+  [4;35;1mStory Load (0.1ms)[0m   [0mSELECT * FROM "stories" WHERE ("stories"."id" = 1) [0m

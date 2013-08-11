@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Stories: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag :defaults %>
+</head>
+<body>
+  <div id="content">
+    <div id="login_logout">
+      <% if @current_user %>
+       Logged in as:
+       <%= @current_user.login %>
+       <em> <%= link_to "(Logout)", session_path, 
+                      :method => :delete %></em>
+     <% else %>
+       <em>Not logged in.</em>
+       <%= link_to 'Login', new_session_path %>
+    <% end %>
+   </div>
+
+
+    <h4>Connected Lab: <i>X-Link</i></h4> 
+    <% unless flash[:notice].blank? %>
+      <div id="notification"><%= flash[:notice] %></p></div>
+    <% end %>
+    <%= yield %>
+  </div>
+  <ul id="navigation">
+    <li><%= link_to 'Front page stories', stories_path %></li>
+    <li><%= link_to 'Submit a new STORY!', new_story_path %></li>
+  </ul>
+</body>
+</html>

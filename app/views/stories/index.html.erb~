@@ -1,0 +1,27 @@
+<h2>Listing stories</h2>
+
+
+<h5>A random link: <%= link_to @story.name, story_path(@story) %></h5>
+
+
+ <hr>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Link</th>
+  </tr>
+
+<% @stories.each do |story| %>
+  <tr>
+    <td><%=h story.name %></td>
+    <td><%=h story.link %></td>
+    <td><%= link_to 'Show', story %></td>
+    <td><%= link_to 'Edit', edit_story_path(story) %></td>
+    <td><%= link_to 'Destroy', story, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New story', new_story_path %>

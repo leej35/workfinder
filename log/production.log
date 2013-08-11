@@ -1,0 +1,12 @@
+
+
+Processing StoriesController#index (for 211.214.188.203 at 2013-08-11 11:17:57) [GET]
+Rendering template within layouts/stories
+Rendering stories/index
+Completed in 27ms (View: 15, DB: 2) | 200 OK [http://ec2-54-234-88-208.compute-1.amazonaws.com/stories]
+
+
+Processing StoriesController#index (for 211.214.188.203 at 2013-08-11 11:17:57) [GET]
+Rendering template within layouts/stories
+Rendering stories/index
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://ec2-54-234-88-208.compute-1.amazonaws.com/stories]

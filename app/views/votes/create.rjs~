@@ -1,0 +1,6 @@
+<h1>Votes#create</h1>
+<p>Find me in app/views/votes/create.html.erb</p>
+
+page.replace_html 'vote_score', "Score: #{@story.votes.size}"
+page[:vote_score].visual_effect :highlight
+
